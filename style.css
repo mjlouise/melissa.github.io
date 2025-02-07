@@ -1,9 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+
 body {
     font-family: 'Courier New', Courier, monospace;
     background: #0a192f;
     color: #ccd6f6;
     text-align: center;
     padding: 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 header h1 {
@@ -40,7 +50,9 @@ btn {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: auto;
     font-size: 0.9rem;
     opacity: 0.7;
+    padding: 10px 0;
+    text-align: center; 
 }
