@@ -51,7 +51,7 @@ p {
 }
 
 .description {
-    margin-top: 5px; /* Brings tagline and description closer */
+    margin-top: -10px; /* Brings tagline and description closer */
 }
 
 /* Page-Specific Adjustments */
