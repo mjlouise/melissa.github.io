@@ -1,49 +1,54 @@
+/* Reset & General Styling */
 html, body {
     height: 100%;
     margin: 0;
-}
-
-body {
     font-family: 'Courier New', Courier, monospace;
     background: #0a192f;
     color: #ccd6f6;
     text-align: center;
-    padding: 20px; 
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
-/* Navigation Menu */
-nav {
-    position: absolute;
-    left: 20px; /* Adjust spacing from left */
-    top: 50%; /* Centers the nav vertically */
-    transform: translateY(-50%);
-}
-
-nav ul {
-    list-style-type: disc; /* Ensures bullet points appear */
-    padding: 0;
-    margin: 0;
-    text-align: left; /* Aligns text with bullets */
-}
-
-nav ul li {
-    margin: 10px 0; /* Adds spacing between items */
-    font-size: 1.2rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ccd6f6;
-}
-
-/* Main Content */
+/* Make content take up full height */
 main {
     flex-grow: 1;
 }
 
-header h1 {
+/* Header & Navigation */
+header {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #64ffda;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #52e0c4;
+}
+
+/* Headings */
+h1 {
     font-size: 3rem;
     margin: 20px 0;
 }
@@ -52,27 +57,26 @@ header h1 {
     color: #64ffda;
 }
 
-/* Fix for Tagline */
-.intro-text {
-    font-size: 1.2rem;
-    white-space: nowrap; /* Keeps tagline on one line */
-    margin: 10px auto;
-    text-align: center;
-}
-
-/* Fix for Wrapped Text */
+/* Paragraph Styling */
 p {
     font-size: 1.2rem;
-    max-width: 600px; /* Allows text to wrap properly */
-    margin: 10px auto;
-    text-align: center;
+    max-width: 600px;
+    margin: auto;
 }
 
-/* Responsive Fix for Smaller Screens */
-@media (max-width: 600px) {
-    .intro-text {
-        font-size: 1rem; /* Reduce font size to fit smaller screens */
-    }
+/* Styling for Section About */
+.about {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Fix Bullet Points Inside Page Content */
+.content-list {
+    list-style-type: disc;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 20px;
 }
 
 /* Buttons */
@@ -80,7 +84,7 @@ p {
     margin-top: 20px;
 }
 
-.btn { 
+.btn {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -102,5 +106,6 @@ footer {
     font-size: 0.9rem;
     opacity: 0.7;
     padding: 10px 0;
-    text-align: center; 
+    text-align: center;
 }
+
