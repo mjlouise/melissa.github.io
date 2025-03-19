@@ -45,6 +45,11 @@ p {
     margin: 10px auto; /* Centers text */
 }
 
+.tagline {
+    white-space: nowrap; /* Prevents the text from breaking into multiple lines */
+    display: inline-block; /* Ensures it behaves like a single unit */
+}
+
 /* Adjusts spacing between tagline and description */
 .tagline {
     margin-bottom: 5px; /* Brings tagline and description closer */
