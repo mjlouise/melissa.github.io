@@ -45,17 +45,23 @@ p {
     margin: 10px auto; /* Centers text */
 }
 
-/* Page-Specific Adjustments */
-
-/* Centers skills list on About Me page */
-.about-page .content-list {
-    list-style: none; /* Removes bullets */
-    text-align: center; /* Centers text */
-    margin: auto; /* Keeps it aligned properly */
-    display: inline-block; /* Prevents full-width stretching */
+/* Adjusts spacing between tagline and description */
+.tagline {
+    margin-bottom: 5px; /* Reduces space below tagline */
 }
 
-/* Adds spacing between different sections */
+.description {
+    margin-top: 5px; /* Reduces space above description */
+}
+
+/* Page-Specific Adjustments */
+.about-page .content-list {
+    list-style: none; /* Removes bullets */
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
 .about-page p,
 .projects-page p,
 .contact-page p {
@@ -89,5 +95,6 @@ footer {
     opacity: 0.7;
     padding: 10px 0;
 }
+
 
 
