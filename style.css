@@ -62,9 +62,11 @@ p {
     display: inline-block;
 }
 
-/* Adds space after 'Some of my skills include:' */
+/* Adds an empty line (extra space) after 'Some of my skills include:' */
 .skills-heading {
-    margin-bottom: 15px; /* Adjust this value as needed */
+    display: block; 
+    margin-bottom: 30px; /* Adjust to create more space */
+    padding-bottom: 10px; /* Extra padding for separation */
 }
 
 .about-page p,
