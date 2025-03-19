@@ -52,19 +52,25 @@ header h1 {
     color: #64ffda;
 }
 
-/* Fix for "Aspiring Digital Forensics Investigator | Tech Enthusiast" */
+/* Fix for Tagline */
+.intro-text {
+    font-size: 1.2rem;
+    white-space: nowrap; /* Keeps tagline on one line */
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Fix for Wrapped Text */
 p {
     font-size: 1.2rem;
-    max-width: 100%;
-    white-space: nowrap; /* Prevents text from wrapping */
-    margin: 10px auto; /* Centers it */
+    max-width: 600px; /* Allows text to wrap properly */
+    margin: 10px auto;
     text-align: center;
-    display: inline-block;
 }
 
 /* Responsive Fix for Smaller Screens */
 @media (max-width: 600px) {
-    p {
+    .intro-text {
         font-size: 1rem; /* Reduce font size to fit smaller screens */
     }
 }
