@@ -47,11 +47,11 @@ p {
 
 /* Adjusts spacing between tagline and description */
 .tagline {
-    margin-bottom: 5px; /* Reduces space below tagline */
+    margin-bottom: 5px; /* Brings tagline and description closer */
 }
 
 .description {
-    margin-top: 5px; /* Reduces space above description */
+    margin-top: 5px; /* Brings tagline and description closer */
 }
 
 /* Page-Specific Adjustments */
@@ -60,6 +60,11 @@ p {
     text-align: center;
     margin: auto;
     display: inline-block;
+}
+
+/* Adds space after 'Some of my skills include:' */
+.skills-heading {
+    margin-bottom: 15px; /* Adjust this value as needed */
 }
 
 .about-page p,
