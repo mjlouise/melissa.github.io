@@ -57,8 +57,8 @@ p {
 /* Profile Image Styling */
 .profile-image {
     display: block;
-    margin: 20px auto; /* Centers the image and adds spacing */
-    width: 150px; /* Adjust size as needed */
+    margin: 10px auto; /* Centers the image and adds spacing */
+    width: 80px; /* Adjust size as needed */
     border-radius: 50%; /* Makes it circular if desired */
 }
 
