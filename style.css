@@ -24,7 +24,7 @@ section {
 
 /* Navigation Bar */
 nav ul {
-    list-style: none; /* Remove default bullets */
+    list-style: none; /* Remove bullets ONLY from nav */
     padding: 0;
     text-align: left;
     position: absolute;
@@ -53,12 +53,17 @@ header h1 {
     color: #64ffda;
 }
 
-/* Fix for "Aspiring Digital Forensics Investigator | Tech Enthusiast" */
-main p {
+/* Fix for "Aspiring Digital Forensics Specialist | Tech Enthusiast" */
+.main-title {
     font-size: 1.2rem;
     max-width: 600px;
     margin: auto;
     white-space: nowrap; /* Keeps text on one line */
+}
+
+/* Reduce space between title and paragraph */
+.main-subtext {
+    margin-top: -5px; /* Moves text closer */
 }
 
 /* Buttons */
@@ -78,6 +83,13 @@ main p {
 
 .btn:hover {
     background: #52e0c4;
+}
+
+/* Ensure content lists keep bullets */
+ul.content-list {
+    list-style: disc; /* Brings back bullet points */
+    text-align: center; /* Centers bullets */
+    display: inline-block; /* Keeps bullets properly positioned */
 }
 
 /* Projects Page */
@@ -111,5 +123,6 @@ footer {
     padding: 10px 0;
     text-align: center; 
 }
+
 
 
