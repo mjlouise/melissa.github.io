@@ -14,7 +14,7 @@ main {
     flex-grow: 1;
 }
 
-/* Navigation Styling (Removes Bullet Points) */
+/* Navigation Styling */
 nav ul {
     list-style: none; /* Removes bullets */
     padding: 0;
@@ -42,14 +42,24 @@ h1 {
 p {
     font-size: 1.2rem;
     max-width: 600px;
-    margin: 10px auto; /* Adjusts spacing */
+    margin: 10px auto; /* Centers text */
 }
 
-/* Removes bullet points from content lists */
-.content-list {
-    list-style: none;
-    padding-left: 0;
-    text-align: left;
+/* Page-Specific Adjustments */
+
+/* Centers skills list on About Me page */
+.about-page .content-list {
+    list-style: none; /* Removes bullets */
+    text-align: center; /* Centers text */
+    margin: auto; /* Keeps it aligned properly */
+    display: inline-block; /* Prevents full-width stretching */
+}
+
+/* Adds spacing between different sections */
+.about-page p,
+.projects-page p,
+.contact-page p {
+    margin-bottom: 20px;
 }
 
 /* Button Styling */
@@ -79,4 +89,5 @@ footer {
     opacity: 0.7;
     padding: 10px 0;
 }
+
 
