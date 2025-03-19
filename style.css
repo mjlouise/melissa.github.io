@@ -27,8 +27,10 @@ header h1 {
 
 p {
     font-size: 1.2rem;
-    max-width: 600px;
-    margin: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    margin: 10px auto;
+    text-align: center;
 }
 
 .buttons {
