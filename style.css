@@ -46,9 +46,12 @@ p {
 }
 
 .tagline {
-    white-space: nowrap; /* Prevents the text from breaking into multiple lines */
-    display: inline-block; /* Ensures it behaves like a single unit */
+    white-space: nowrap; /* Prevents wrapping */
+    display: inline-block; /* Keeps it as a single unit */
+    font-size: 1.5rem; /* Adjust if needed */
+    max-width: none; /* Overrides the default max-width */
 }
+
 
 /* Adjusts spacing between tagline and description */
 .tagline {
