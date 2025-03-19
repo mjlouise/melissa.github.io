@@ -45,13 +45,21 @@ p {
     margin: 10px auto; /* Centers text */
 }
 
+/* Tagline Styling - Forces text to stay on one line */
 .tagline {
     white-space: nowrap; /* Prevents wrapping */
     display: inline-block; /* Keeps it as a single unit */
-    font-size: 1.5rem; /* Adjust if needed */
-    max-width: none; /* Overrides the default max-width */
+    font-size: 1.5rem; /* Adjust size as needed */
+    max-width: none; /* Ensures it doesn't inherit max-width */
+    text-align: center; /* Keeps it centered */
+    width: auto; /* Ensures it only takes as much space as needed */
 }
 
+/* Ensures no forced wrapping on the tagline */
+.tagline p {
+    max-width: none;
+    margin: 0 auto;
+}
 
 /* Adjusts spacing between tagline and description */
 .tagline {
@@ -118,6 +126,5 @@ footer {
     opacity: 0.7;
     padding: 10px 0;
 }
-
 
 
