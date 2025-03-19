@@ -51,8 +51,15 @@ p {
 }
 
 .description {
+    margin-top: 5px; /* Brings tagline and description closer */
+}
+
+/* Profile Image Styling */
+.profile-image {
     display: block;
-    margin-top: -30px !important; /* Moves text up */
+    margin: 20px auto; /* Centers the image and adds spacing */
+    width: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it circular if desired */
 }
 
 /* Page-Specific Adjustments */
