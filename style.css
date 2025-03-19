@@ -14,12 +14,14 @@ html, body {
 /* Make content take up full height */
 main {
     flex-grow: 1;
+    margin-bottom: 10px;
 }
 
 /* Header & Navigation */
 header {
     text-align: left;
     padding: 10px 20px;
+    margin-top: 10px;
 }
 
 nav ul {
