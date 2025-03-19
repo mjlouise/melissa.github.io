@@ -72,11 +72,11 @@ p {
 
 /* Fix Bullet Points Inside Page Content */
 .content-list {
-    list-style-type: disc;
-    text-align: left;
-    max-width: 600px;
-    margin: auto;
-    padding-left: 20px;
+    list-style-type: disc;  /* Keeps bullet points */
+    text-align: left;       /* Ensures text stays readable */
+    display: inline-block;  /* Allows centering */
+    margin: auto;           /* Centers the list */
+    padding-left: 0;        /* Remove unnecessary left padding */
 }
 
 /* Buttons */
