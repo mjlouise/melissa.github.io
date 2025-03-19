@@ -51,8 +51,8 @@ p {
 }
 
 .description {
-    position: relative; 
-    top: -20px; /* Moves text up */
+    display: block;
+    margin-top: -30px !important; /* Moves text up */
 }
 
 /* Page-Specific Adjustments */
