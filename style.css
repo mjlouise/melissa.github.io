@@ -74,7 +74,7 @@ p {
 .profile-image {
     display: block;
     margin: 10px auto; /* Centers the image and adds spacing */
-    width: 120px; /* Adjust size as needed */
+    width: 150px; /* Adjust size as needed */
     border-radius: 50%; /* Makes it circular if desired */
 }
 
